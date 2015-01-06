@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: b372b9558bbec4f49be298965a7fe0fc
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: alpha
+    100002: body_cow
+    100004: body_cow 1
+    100006: cloud
+    100008: hair_cow
+    100010: head_cow
+    100012: left_arm_cow
+    100014: left_shoulder_cow
+    100016: //RootNode
+    100018: right_arm_cow
+    100020: right_shoulder_cow
+    100022: root_cow
+    100024: snout_cow
+    100026: sweat
+    100028: tail_cow
+    400000: alpha
+    400002: body_cow
+    400004: body_cow 1
+    400006: cloud
+    400008: hair_cow
+    400010: head_cow
+    400012: left_arm_cow
+    400014: left_shoulder_cow
+    400016: //RootNode
+    400018: right_arm_cow
+    400020: right_shoulder_cow
+    400022: root_cow
+    400024: snout_cow
+    400026: sweat
+    400028: tail_cow
+    2300000: cloud
+    2300002: sweat
+    3300000: cloud
+    3300002: sweat
+    4300000: sweat
+    4300002: cloud
+    4300004: body_cow
+    4300006: alpha
+    7400000: Idle
+    7400002: Attack
+    7400004: GetHit
+    7400006: Victory
+    9500000: //RootNode
+    13700000: alpha
+    13700002: body_cow
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: alpha
+        weight: 1
+      - path: body_cow
+        weight: 1
+      - path: root_cow
+        weight: 1
+      - path: root_cow/body_cow 1
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/hair_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/snout_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow/left_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow/right_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/tail_cow
+        weight: 1
+      - path: root_cow/cloud
+        weight: 1
+      - path: root_cow/sweat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: alpha
+        weight: 1
+      - path: body_cow
+        weight: 1
+      - path: root_cow
+        weight: 1
+      - path: root_cow/body_cow 1
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/hair_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/snout_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow/left_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow/right_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/tail_cow
+        weight: 1
+      - path: root_cow/cloud
+        weight: 1
+      - path: root_cow/sweat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: GetHit
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: alpha
+        weight: 1
+      - path: body_cow
+        weight: 1
+      - path: root_cow
+        weight: 1
+      - path: root_cow/body_cow 1
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/hair_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/snout_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow/left_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow/right_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/tail_cow
+        weight: 1
+      - path: root_cow/cloud
+        weight: 1
+      - path: root_cow/sweat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Victory
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: alpha
+        weight: 1
+      - path: body_cow
+        weight: 1
+      - path: root_cow
+        weight: 1
+      - path: root_cow/body_cow 1
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/hair_cow
+        weight: 1
+      - path: root_cow/body_cow 1/head_cow/snout_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/left_shoulder_cow/left_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow
+        weight: 1
+      - path: root_cow/body_cow 1/right_shoulder_cow/right_arm_cow
+        weight: 1
+      - path: root_cow/body_cow 1/tail_cow
+        weight: 1
+      - path: root_cow/cloud
+        weight: 1
+      - path: root_cow/sweat
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00300000003
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
