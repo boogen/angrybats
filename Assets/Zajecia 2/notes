@@ -1,0 +1,44 @@
+1. dodajemy zwierzaka
+2. ustawiamy zwierzaka nad ziemia
+3. ustawiamy hard shadows w swietle
+4. play -> nic sie nie dzieje :(
+5. dodajemy rigidbody, ktore sprawia ze sily fizyczne zaczynaja dzialac na naszego zwierzaka
+6. play -> co sie stalo? kto powie ze przelecial przez ziemie?
+7. trzeba ustawic dwie rzeczy -> co koliduje z czym? przyblizyc naszego zwierzaka prostszym ksztaltem
+8. kolizje: Edit -> Project Settings -> Physics i zaznaczamy Default z Default
+9. collider: AddComponent: Sphere Collider
+10. ustawiamy collider
+11. play -> nie przelatuje przez ziemie
+12. nuda! zrobmy skaczaca krowe!
+13. material fizyczny: create -> physics material
+14. ustawiamy bounciness na 0.5
+15. zaznaczamy krowke, przeciagamy material do collidera
+16. ustawiamy zwierzaka wysoko
+17. play -> odbija sie
+18. jak zrobic zwierzaka, ktory skacze w nieskonczonosc?
+19. dodajemy nowego zwierzaka tuz nad ziemia
+20. obracamy go, zeby patrzyl w prawo
+21. dodajemy rigidbody
+22. dodajemy sphere collider i ustawiamy go
+23. dodajemy nowy skrypt
+24. wybieramy c#
+25. kod w Start:
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce(new Vector3(-500, 500, 0));
+26. play
+27. ustawiamy sile tak, zeby wyladowal na ziemi
+28. ustawiamy grawitacje jak na ksiezycu
+29. jaka jest grawitacja na ziemii? kto wie? jaka jest na ksiezycu?
+30. Edit -> Project Settings -> Physics 
+31. Co sie stanie jak ustawimy boczna grawitacje?
+32. Przywracamy normalna grawitacje
+33. dodajemy cube'a
+34. ustawiamy go tak, zeby krowa w niego wpadla
+35. powiekszamy
+36. krowa sie odbija, trzeba dodac rigidbody do boxa
+37. zrobmy domino!
+38. jak dzialaja kolizje?
+39. SAT 
+
+Zadania dodatkowe:
+1. kamera z oczu zwierzaka

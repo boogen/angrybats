@@ -7,7 +7,6 @@ public class Bat : MonoBehaviour {
 	float time = 0f;
 	LineRenderer leftLine;
 	LineRenderer rightLine;
-	bool dragged = false;
 	GameObject slingshot;
 	Rigidbody rigidbody;
 
@@ -16,9 +15,13 @@ public class Bat : MonoBehaviour {
 		rigidbody = GetComponent<Rigidbody>();
 
 		slingshot = GameObject.Find("slingshot");
+		slingshot.GetComponent<BoxCollider>().enabled = false;
 
 		Transform left = slingshot.transform.FindChild("left");
 		Transform right = slingshot.transform.FindChild("right");
+
+		Transform spawn = slingshot.transform.FindChild("spawn");
+		transform.position = spawn.position;
 
 		leftLine = left.gameObject.GetComponent<LineRenderer>();
 		rightLine = right.gameObject.GetComponent<LineRenderer>();
@@ -29,11 +32,11 @@ public class Bat : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		dragged = true;
+		slingshot.GetComponent<BoxCollider>().enabled = true;
 	}
 
 	void OnMouseUp() {
-		dragged = false;
+		slingshot.GetComponent<BoxCollider>().enabled = false;
 
 		rigidbody.isKinematic = false;
 
@@ -47,23 +50,30 @@ public class Bat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (dragged) {
-			Vector3 pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 3));
-			pos.z = 5;
+		if (slingshot.GetComponent<BoxCollider>().enabled) {
 
-			Transform middle = slingshot.transform.FindChild("middle");
-			Vector3 diff = pos - middle.position;
-			if (diff.magnitude > 2) {
-				diff.Normalize();
-				diff *= 2;
-				transform.position = middle.position + diff;
-			}
-			else {
-				transform.position = pos;
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(ray, out hit, 500, 1 << 12)) {
+
+				Vector3 pos = hit.point;
+				Transform middle = slingshot.transform.FindChild("middle");
+				Vector3 diff = pos - middle.position;
+				if (diff.magnitude > 2) {
+					diff.Normalize();
+					diff *= 2;
+					transform.position = middle.position + diff;
+				}
+				else {
+					transform.position = pos;
+				}
+				
+				leftLine.SetPosition(1, this.transform.position);
+				rightLine.SetPosition(1, this.transform.position);
 			}
 
-			leftLine.SetPosition(1, this.transform.position);
-			rightLine.SetPosition(1, this.transform.position);
+
+
 		}
 
 
@@ -78,7 +88,7 @@ public class Bat : MonoBehaviour {
 					nextBat.AddComponent<CameraFollow>();
 					nextBat.AddComponent<Bat>();
 					nextBat.transform.Rotate(new Vector3(0, -90, 0));
-					nextBat.transform.position = new Vector3(13, 0.59f, 5f);
+					nextBat.transform.position = new Vector3(13f, 0.6f, 5f);
 				}
 			}
 		}
