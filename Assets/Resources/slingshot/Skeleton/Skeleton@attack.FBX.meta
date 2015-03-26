@@ -1,0 +1,93 @@
+fileFormatVersion: 2
+guid: a3fdb9d72ef11d74b9d5ddbc32e84a2f
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Orc rigHub001
+    100002: Orc rigHub002
+    100004: Orc rigHub002Bone001
+    100006: Orc rigLArm1
+    100008: Orc rigLArmPalm
+    100010: Orc rigRArm1
+    100012: Orc rigRArmPalm
+    100014: Orc rigSpine
+    100016: //RootNode
+    100018: Skeleton rigHub001
+    100020: Skeleton rigHub002
+    100022: Skeleton rigHub002Bone001
+    100024: Skeleton rigLArm1
+    100026: Skeleton rigLArmPalm
+    100028: Skeleton rigRArm1
+    100030: Skeleton rigRArmPalm
+    100032: Skeleton rigSpine
+    400000: Orc rigHub001
+    400002: Orc rigHub002
+    400004: Orc rigHub002Bone001
+    400006: Orc rigLArm1
+    400008: Orc rigLArmPalm
+    400010: Orc rigRArm1
+    400012: Orc rigRArmPalm
+    400014: Orc rigSpine
+    400016: //RootNode
+    400018: Skeleton rigHub001
+    400020: Skeleton rigHub002
+    400022: Skeleton rigHub002Bone001
+    400024: Skeleton rigLArm1
+    400026: Skeleton rigLArmPalm
+    400028: Skeleton rigRArm1
+    400030: Skeleton rigRArmPalm
+    400032: Skeleton rigSpine
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
