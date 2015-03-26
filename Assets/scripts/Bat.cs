@@ -45,7 +45,7 @@ public class Bat : MonoBehaviour {
 
 		rigidbody.AddForce(diff * 400);
 		shot = true;
-		GetComponent<TrailRenderer>().enabled = true;
+		//GetComponent<TrailRenderer>().enabled = true;
 	}
 	
 	// Update is called once per frame
