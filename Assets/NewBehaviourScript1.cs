@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Windmill : MonoBehaviour {
+public class NewBehaviourScript1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
