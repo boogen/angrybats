@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Iiiiiiiiiii : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		int i = 500;
 		Rigidbody rb = GetComponent<Rigidbody>();
-		rb.AddForce(new Vector3(i, i, 0));
+		 rb.AddForce (new Vector3 (-2000, 500, 0));
 	}
 	
 	// Update is called once per frame
