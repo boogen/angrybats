@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Wiatrak : MonoBehaviour {
+public class polksakw : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		Rigidbody rb = GetComponent<Rigidbody> ();
-		rb.AddForce (new Vector3 (-200, 500, 0));
+	void Start () { Rigidbody rb = GetComponent<Rigidbody> ();
+		rb.AddForce (new Vector3 (0, 0,27));
+	
 	}
 	
 	// Update is called once per frame
