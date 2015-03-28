@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Windmill : MonoBehaviour {
+public class obrut : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,7 +10,6 @@ public class Windmill : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	//	Transform wings = transform.FindChild("top1").FindChild("wings");
-		//wings.Rotate(new Vector3(0, 0, 2));
+	
 	}
 }
