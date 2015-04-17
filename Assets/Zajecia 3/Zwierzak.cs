@@ -87,14 +87,16 @@ public class Zwierzak : MonoBehaviour {
 			time += Time.deltaTime;
 			if (time >= 5) {
 				this.enabled = false;
-				GameObject nextAnimal = GetComponent<Nastepny>().zwierzak;
-				if (nextAnimal != null) {
-					nextAnimal.AddComponent<Zwierzak>();
-					Camera.main.transform.parent = slingshot.transform;
-					Camera.main.transform.position = Camera.main.GetComponent<Kamera>().offset;
-					Camera.main.transform.rotation = Camera.main.GetComponent<Kamera>().rotation;
-					nextAnimal.transform.rotation = this.transform.rotation;
-					nextAnimal.transform.position = spawn.position;
+				if (GetComponent<Nastepny>() != null) {
+					GameObject nextAnimal = GetComponent<Nastepny>().zwierzak;
+					if (nextAnimal != null) {
+						nextAnimal.AddComponent<Zwierzak>();
+						Camera.main.transform.parent = slingshot.transform;
+						Camera.main.transform.position = Camera.main.GetComponent<Kamera>().offset;
+						Camera.main.transform.rotation = Camera.main.GetComponent<Kamera>().rotation;
+						nextAnimal.transform.rotation = this.transform.rotation;
+						nextAnimal.transform.position = spawn.position;
+					}
 				}
 			}
 		}
