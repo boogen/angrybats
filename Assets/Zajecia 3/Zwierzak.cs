@@ -10,9 +10,12 @@ public class Zwierzak : MonoBehaviour {
 	GameObject slingshot;
 	Rigidbody rigidbody;
 	Transform spawn;
+	public Camera camera;
 	
 	// Use this for initialization
 	void Start () {
+		GameObject c = GameObject.Find ("Main Camera");
+		camera = c.GetComponent<Camera> ();
 		rigidbody = GetComponent<Rigidbody>();
 		
 		slingshot = GameObject.Find("proca");
@@ -46,8 +49,8 @@ public class Zwierzak : MonoBehaviour {
 		rigidbody.AddForce(diff * slingshot.GetComponent<Proca>().moc);
 		shot = true;
 		GetComponent<TrailRenderer>().enabled = true;
-		Camera.main.transform.parent = this.transform;
-		Camera.main.transform.position = Camera.main.GetComponent<Kamera>().offset;
+		camera.transform.parent = this.transform;
+		camera.transform.position = camera.GetComponent<Kamera>().offset;
 		//Camera.main.transform.localPosition = new Vector3(0, 0, 0);
 		//Camera.main.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
 	}
@@ -56,7 +59,7 @@ public class Zwierzak : MonoBehaviour {
 	void Update () {
 		if (slingshot.GetComponent<BoxCollider>().enabled) {
 			
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			if(Physics.Raycast(ray, out hit, 500, 1 << 12)) {
 				
@@ -64,9 +67,9 @@ public class Zwierzak : MonoBehaviour {
 				Transform middle = slingshot.transform.FindChild("middle");
 				Vector3 diff = pos - middle.position;
 
-				if (diff.magnitude > 2) {
+				if (diff.magnitude > 10) {
 					diff.Normalize();
-					diff *= 2;
+					diff *= 10;
 					transform.position = middle.position + diff;
 				}
 				else {
@@ -91,9 +94,9 @@ public class Zwierzak : MonoBehaviour {
 					GameObject nextAnimal = GetComponent<Nastepny>().zwierzak;
 					if (nextAnimal != null) {
 						nextAnimal.AddComponent<Zwierzak>();
-						Camera.main.transform.parent = slingshot.transform;
-						Camera.main.transform.position = Camera.main.GetComponent<Kamera>().offset;
-						Camera.main.transform.rotation = Camera.main.GetComponent<Kamera>().rotation;
+						camera.transform.parent = slingshot.transform;
+						camera.transform.position = camera.GetComponent<Kamera>().offset;
+						camera.transform.rotation = camera.GetComponent<Kamera>().rotation;
 						nextAnimal.transform.rotation = this.transform.rotation;
 						nextAnimal.transform.position = spawn.position;
 					}
