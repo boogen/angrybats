@@ -64,9 +64,9 @@ public class Zwierzak : MonoBehaviour {
 				Transform middle = slingshot.transform.FindChild("middle");
 				Vector3 diff = pos - middle.position;
 
-				if (diff.magnitude > 2) {
+				if (diff.magnitude > 6) {
 					diff.Normalize();
-					diff *= 2;
+					diff *= 6;
 					transform.position = middle.position + diff;
 				}
 				else {
