@@ -47,9 +47,9 @@ public class Zwierzak : MonoBehaviour {
 		shot = true;
 		GetComponent<TrailRenderer>().enabled = true;
 		Camera.main.transform.parent = this.transform;
-		Camera.main.transform.position = Camera.main.GetComponent<Kamera>().offset;
-		//Camera.main.transform.localPosition = new Vector3(0, 0, 0);
-		//Camera.main.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+		//Camera.main.transform.position = Camera.main.GetComponent<Kamera>().offset;
+		Camera.main.transform.localPosition = new Vector3(0, 0, 0);
+		Camera.main.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
 	}
 	
 	// Update is called once per frame
